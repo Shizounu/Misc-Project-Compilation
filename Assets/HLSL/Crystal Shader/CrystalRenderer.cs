@@ -76,8 +76,8 @@ public class CrystalRenderer : MonoBehaviour {
     }
 
     private void DrawCrystal( Camera cam ) {
-
         if ( _cameras.ContainsKey( cam ) ) return;
+        Debug.Log("Drawing Crystal");
 
         // Initialize the CommandBuffer
         _commandBuffer = new CommandBuffer();
